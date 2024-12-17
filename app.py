@@ -35,7 +35,7 @@ def main():
     park = (lambda x:1 if x=='Yes' else 0)(st.selectbox('Is parking included in the booking',['Yes','No']))
     months = st.slider('What will be month of arival',min_value1,max_value=12,step=1)
     day = st.slider('What will be day of arival',min_value1,max_value=31,step=1)
-    wkday_lambda = (lambda x:0 if x=='Mon' else 1 if x=='Tues' else 2 if x=='Wed' else 3 if x=='Thur' else 4 if x=='Fri' else 5 if x=='Sat' else 6 x=='Sun'
+    wkday_lambda = (lambda x:0 if x=='Mon' else 1 if x=='Tues' else 2 if x=='Wed' else 3 if x=='Thur' else 4 if x=='Fri' else 5 if x=='Sat' else 6 x=='Sun')
     wkday = st.selectbox('What is the weekday of arrival',['Mon','Tues','Wed','Thur','Fri','Sat','Sun'])
     
     trans_data = pt.transform ([[lt,price]])
