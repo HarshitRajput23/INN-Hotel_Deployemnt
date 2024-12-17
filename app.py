@@ -42,7 +42,7 @@ def main():
     lt_t = tran_data[0][0]
     price_t = tran_data[0][1]
     
-    inp_list = [lt_t,mst,spcl,,price_t,adults,wkd,park,wk,month,day,wkday]
+    inp_list = [lt_t,mst,spcl,price_t,adults,wkd,park,wk,month,day,wkday]
     
     if st.button('Predict'):
         response = prediction(inp_list)
